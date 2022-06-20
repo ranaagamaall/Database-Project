@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8232D5-B804-4766-8840-C88C50EAD01E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBapplication</RootNamespace>
+    <AssemblyName>DBapplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Citizen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citizen.Designer.cs">
+      <DependentUpon>Citizen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitizenFunctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitizenFunctions.Designer.cs">
+      <DependentUpon>CitizenFunctions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citizen_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citizen_Patient.Designer.cs">
+      <DependentUpon>Citizen_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citizen_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citizen_Service.Designer.cs">
+      <DependentUpon>Citizen_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Citizen_UpdateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Citizen_UpdateInfo.Designer.cs">
+      <DependentUpon>Citizen_UpdateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Government.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Government.Designer.cs">
+      <DependentUpon>Government.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gov_AddFacilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gov_AddFacilities.Designer.cs">
+      <DependentUpon>Gov_AddFacilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gov_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gov_Statistics.Designer.cs">
+      <DependentUpon>Gov_Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gov_Vaccines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gov_Vaccines.Designer.cs">
+      <DependentUpon>Gov_Vaccines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosp_Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosp_Patients.Designer.cs">
+      <DependentUpon>Hosp_Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosp_Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosp_Services.Designer.cs">
+      <DependentUpon>Hosp_Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosp_StaffMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosp_StaffMembers.Designer.cs">
+      <DependentUpon>Hosp_StaffMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosp_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosp_Statistics.Designer.cs">
+      <DependentUpon>Hosp_Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hosp_Validation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hosp_Validation.Designer.cs">
+      <DependentUpon>Hosp_Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PinCode.Designer.cs">
+      <DependentUpon>PinCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures.cs" />
+    <Compile Include="Hospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hospital.Designer.cs">
+      <DependentUpon>Hospital.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Citizen.resx">
+      <DependentUpon>Citizen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitizenFunctions.resx">
+      <DependentUpon>CitizenFunctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citizen_Patient.resx">
+      <DependentUpon>Citizen_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citizen_Service.resx">
+      <DependentUpon>Citizen_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Citizen_UpdateInfo.resx">
+      <DependentUpon>Citizen_UpdateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Government.resx">
+      <DependentUpon>Government.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gov_AddFacilities.resx">
+      <DependentUpon>Gov_AddFacilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gov_Statistics.resx">
+      <DependentUpon>Gov_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gov_Vaccines.resx">
+      <DependentUpon>Gov_Vaccines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hosp_Patients.resx">
+      <DependentUpon>Hosp_Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hosp_Services.resx">
+      <DependentUpon>Hosp_Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hosp_StaffMembers.resx">
+      <DependentUpon>Hosp_StaffMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hosp_Validation.resx">
+      <DependentUpon>Hosp_Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PinCode.resx">
+      <DependentUpon>PinCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hospital.resx">
+      <DependentUpon>Hospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
